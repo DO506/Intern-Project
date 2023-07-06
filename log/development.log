@@ -724,3 +724,24 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.8ms | Allocations: 63345)
 
 
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:10:14 +0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 16717)
+  Rendered layout layouts/application.html.erb (Duration: 101.5ms | Allocations: 51249)
+Completed 200 OK in 124ms (Views: 108.9ms | ActiveRecord: 1.2ms | Allocations: 62690)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2023-07-06 16:10:19 +0600
+Processing by StudentsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 3050)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5372)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 5903)
+
+
